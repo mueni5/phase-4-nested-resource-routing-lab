@@ -1,7 +1,7 @@
 class ItemsController < ApplicationController
 
   def index
-    items = Item.all
+    
     if params[:user_id]
       user = User.find(params[:user_id])
       items = user.items
